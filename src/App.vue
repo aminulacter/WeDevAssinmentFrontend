@@ -1,12 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+      <nav-bar />
+      <router-view />
   </div>
 </template>
+<script>
+//import axios from 'axios'
+
+import NavBar from "./components/NavBar.vue";
+export default
+{
+  components:{NavBar},
+  created: function () {
+  //  const FormData = require('form-data');
+   
+  //   const formData = new FormData();
+  //   formData.append('email', 'aminul@aminul.com');
+  //   formData.append('password', '12345678');
+  //   axios.post('http://127.0.0.1:8000/login', formData, {
+  //     headers: {
+        
+  //       'Content-Type': 'multipart/form-data'
+  //     }
+  //   }).then(({data}) => console.log(data.Token))
+  }
+}
+</script>
+
 
 <style>
 #app {
